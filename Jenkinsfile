@@ -8,5 +8,10 @@ pipeline {
                 sh 'python -m pytest tests'
             }
         }
+        stage('test2') {
+            steps {
+                echo "Hello World"   
+            }
+        }
     }
 }
